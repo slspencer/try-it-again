@@ -14,7 +14,7 @@ app.use(express.static("public")); // router to static files
 app.use("/api", apiRoutes); // api routers to database
 app.use("/", htmlRoutes); // html routers to dynamic web pages
 
-// start the server listening on the port
+// start the server listening on port 3001
 app.listen(PORT, function() {
     console.log("Note taking server is listening on https://localhost/" + PORT);
 });
